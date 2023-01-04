@@ -1,0 +1,27 @@
+.rate {
+  display: flex;
+  align-items: center;
+}
+
+
+.rate .rateIcon {
+  margin-left: 0.5rem;
+}
+.rate {
+  padding-bottom: 0.5rem;
+}
+
+.rateIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.rateIcon + .rateIcon {
+ margin-left: 1rem;
+}
+
+.rate span {
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+  font-weight: bold;
+}

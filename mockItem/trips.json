@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "description": "11 Countries, 25 Days",
+    "name": "European Quest",
+    "score": 4.6,
+    "price": {
+      "basePrice": 3.385,
+      "promotionPrice": 2.877,
+      "currency": "€"
+    },
+    "image": "/graffiti.png"
+  },
+  {
+    "id": 2,
+    "description": "2 Countries, 15 Days",
+    "name": "European Quest",
+    "score": 4.4,
+    "price": {
+      "basePrice": 2.155,
+      "promotionPrice": 1.832,
+      "currency": "€"
+    },
+    "image": "/river.png"
+  },
+  {
+    "id": 3,
+    "description": "1 Country, 10 Days",
+    "name": "European Quest",
+    "score": 4.5,
+    "price": {
+      "basePrice": 1.465,
+      "promotionPrice": 1.245,
+      "currency": "€"
+    },
+    "image": "/scooter.png"
+
+  }
+]

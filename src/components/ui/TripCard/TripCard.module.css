@@ -1,0 +1,39 @@
+.tripCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 0.5rem;
+    scroll-margin: 20px;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
+.imageWrapper {
+    position: relative;
+    width: 321px;
+    aspect-ratio: 2/1;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.contentWrapper {
+    padding: 0.5rem 0.4rem;
+}
+
+.description {
+    color: #696969;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1.3rem;
+    padding-bottom: 0.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .imageWrapper {
+        width: 361px;
+        aspect-ratio: 4/3;
+    }
+}
