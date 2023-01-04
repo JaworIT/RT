@@ -1,6 +1,6 @@
-import s from "./Price.module.css";
 import { FC } from "react";
 import { Price } from "@pages/api/trips";
+import s from "./Price.module.css";
 
 type Props = {
   price: Price;

@@ -1,9 +1,9 @@
 import { FC } from "react";
-import { TripType } from "@pages/api/trips";
-import s from "./TripCard.module.css";
 import Image from "next/dist/client/legacy/image";
 import Price from "@ui/Price/Price";
 import Stars from "@ui/Stars/Stars";
+import { TripType } from "@pages/api/trips";
+import s from "./TripCard.module.css";
 
 type Props = {
   tripData: TripType;

@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
-import s from "./Stars.module.css";
 import Image from "next/dist/client/legacy/image";
+import s from "./Stars.module.css";
 
 type Component = React.FC<{
   score: number;
@@ -20,42 +20,15 @@ const Stars: Component = ({ score }) => {
 
   return (
     <div className={s.rate}>
-      {stars.map((v, i) => {
-        if (v === 1) {
-          return (
-            <Image
-              src={"/star-filled.png"}
-              width={15}
-              height={15}
-              className={s.rateIcon}
-              key={i}
-            />
-          );
-        }
-        if (v === 0) {
-          return (
-            <Image
-              src={"/star-empty.png"}
-              width={15}
-              height={15}
-              className={s.rateIcon}
-              key={i}
-            />
-          );
-        }
-
-        if (v === 0.5) {
-          return (
-            <Image
-              src={"/star-half-empty.png"}
-              className={s.rateIcon}
-              width={15}
-              height={15}
-              key={i}
-            />
-          );
-        }
-      })}
+      {stars.map((v, i) => (
+        <Image
+          src={`/star-${v}.png`}
+          width={15}
+          height={15}
+          className={s.rateIcon}
+          key={i}
+        />
+      ))}
       <span>{score}</span>
     </div>
   );

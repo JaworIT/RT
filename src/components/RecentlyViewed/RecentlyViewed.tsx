@@ -5,7 +5,7 @@ import s from "./RecentlyViewed.module.css";
 
 const RecentlyViewed = () => {
   const { isLoading, data, error } = useQuery(["trips"], () => fetchTrips());
-  const items = data?.data;
+  const trips = data;
   if (isLoading) {
     return <p className={s.loading}>Loading...</p>;
   }
@@ -13,12 +13,12 @@ const RecentlyViewed = () => {
   if (error) {
     return <p className={s.error}>Data retrieval failed!</p>;
   }
-  return items ? (
+  return trips ? (
     <>
       <h1 className={s.title}>Recently viewed trips</h1>
       <div className={s.container}>
-        {items.map((item) => (
-          <TripCard tripData={item} key={item.id} />
+        {trips.data.map((trip) => (
+          <TripCard tripData={trip} key={trip.id} />
         ))}
       </div>
     </>

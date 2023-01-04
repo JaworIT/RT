@@ -1,11 +1,7 @@
 import RecentlyViewed from "@components/RecentlyViewed/RecentlyViewed";
 
 const MainPage = () => {
-  return (
-    <>
-      <RecentlyViewed />
-    </>
-  );
+  return <RecentlyViewed />;
 };
 
 export default MainPage;
